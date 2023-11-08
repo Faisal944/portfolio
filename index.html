@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b5b28882d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li class="last"><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark fass" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fass" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+
+
+    <div class="parallaxContainer">
+        <div class="vignette hide"></div>
+        <img src="img/background.png" data-speedx="0.36360" data-speedy="0.38" data-speedz="0" data-rotation="0" data-distance="-200" class="parallax bg-img">
+        <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-rotation="0" data-distance="850" class="parallax fog-7">
+        <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-rotation="0" data-distance="1100" class="parallax mountain-10">
+        <img src="img/fog_6.png" data-speedx="0.25" data-speedy="0.28" data-speedz="0" data-rotation="0"  data-distance="1400" class="parallax fog-6">
+        <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-rotation="0.02"  data-distance="1700" class="parallax mountain-9">
+        <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-rotation="0" data-distance="1800" class="parallax mountain-8">
+        <img src="img/fog_5.png" data-speedx="0.16" data-speedy="0.105" data-speedz="0" data-rotation="0" data-distance="1900" class="parallax fog-5">
+        <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.09" data-distance="2000" class="parallax mountain-7">
+        <div class="text parallax" data-speedx="0.07" data-speedz="0" data-speedy="0.07" data-rotation="0.11">
+            <h2>Hey!</h2>
+            <h1>Welcome</h1>
+        </div>
+        <img src="img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" data-speedz="0.05" data-rotation="0.12" data-distance="2300" class="parallax mountain-6">
+        <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.135"data-speedz="0" data-rotation="0" data-distance="2400" class="parallax fog-4">
+        <img src="img/mountain_5.png" data-speedx="0.08" data-speedy="0.028" data-speedz="0.13" data-rotation="0.13" data-distance="2550" class="parallax mountain-5">
+        <img src="img/fog_3.png" data-speedx="0.11" data-speedy="0.018" data-speedz="0" data-rotation="0" data-distance="2800" class="parallax fog-3">
+        <img src="img/mountain_4.png" data-speedx="0.059" data-speedy="0.024" data-speedz="0.35" data-rotation="0.14" data-distance="3200" class="parallax mountain-4">
+        <img src="img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" data-speedz="0.32" data-rotation="0.05" data-distance="3400" class="parallax mountain-3">
+        <img src="img/fog_2.png" data-speedx="0.15" data-speedy="0.0115" data-speedz="0" data-rotation="0" data-distance="3600" class="parallax fog-2">
+        <img src="img/mountain_2.png" data-speedx="0.0235" data-speedy="0.013" data-speedz="0.42" data-rotation="0.15" data-distance="3800" class="parallax mountain-2">
+        <img src="img/mountain_1.png" data-speedx="0.027" data-speedy="0.018" data-speedz="0.53" data-rotation="0.2" data-distance="4000" class="parallax mountain-1">
+        <img src="img/sun_rays.png" class="sun-rays hide">
+        <img src="img/black_shadow.png" class="black-shadow hide">
+        <img src="img//fog_1.png" data-speedx="0.12" data-speedy="0.01" data-speedz="0" data-rotation="0" data-distance="4200" class="parallax fog-1">
+    </div>
+
+
+
+    <!-- ------about---- -->
+    <div id="about" class="gradient-background1">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><span>Hello,</span> I'm Mohammed Faisal, an Electronics and Communication graduate with a passion for IT. Python is my trusty companion, it's not just simple, but incredibly fun. Join me on this coding adventure through the digital cosmos!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>OOP, APIs, Flask</li>
+                            <li><span>Web Development</span><br>HTML CSS JavaScript</li>
+                            <li><span>Java</span><br>Object Oriented Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E</span><br>Sri Siddhartha Institue of Technology, Tumkur<br>2019-2023</li>
+                            <li><span>School </span><br>SGR High Schol</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>Python Programming</span><br>100 days of coding<br>Issued by: Udemy</li>
+                            <li><span>Web Development</span><br>Complete Web Development Bootcamp<br>Issued by: Udemy</li>
+                            <li><span>Java Programming</span><br>Issued by: Udemy</li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">This Project is current under Construction. You can check out my other portfolio website.</h1>
+            <div class="services-list">
+                <div class="hidden">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programming</h2>
+                    <p>"Mastering Python to turn code into creativity"</p>
+                    <a href="https://www.w3schools.com/python/python_intro.asp">Learn more</a>
+                </div>
+                <div class="hidden">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        "Crafting digital experiences through the art of web development"</p>
+                    <a href="https://www.w3schools.com/whatis/">Learn more</a>
+                </div>
+                <div class="hidden">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Programming</h2>
+                    <p>"Elevating applications with the power of Java"</p>
+                    <a href="https://www.geeksforgeeks.org/java/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work hidden1">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Text Summarization Website</h3>
+                        <p>"A website that can condense lengthy articles and documents into concise, easy-to-read summaries, saving you time and providing you with the most important information at a glance. It's like a magic wand for readers!"</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work hidden1">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Web Application</h3>
+                        <p>"An automated birthday email service, the perfect way to send heartfelt wishes to your loved ones. It's like a secret agent for special occasions, straight to their inbox, no cape required!"</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work hidden1">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>weather notification service</h3>
+                        <p>"A service that ensures you never leave home unprepared, with a friendly nudge when it's time to grab your umbrella. Because hey, who wants to be caught off guard with the rain!"</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="https://faisal944.github.io/faisal-portfolio/" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> faisal944k@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+916360788936</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_faisall.k/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-faisal-373292246?trk=contact-info"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 edit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright gradient-background1">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Mohammed Faisal 2023. All Rights Reserved. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
