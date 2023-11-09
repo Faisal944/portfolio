@@ -26,7 +26,7 @@ function closemenu(){
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxnMw7mOAs2_hHe_0d_p21st9ZzRvlO_dZ27RZlRa57EnaVuZb0lEFvHdgz-QKJej9K/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg= document.getElementById("msg")
-
+// Znoy iyki hirpskv xs Logyo
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
